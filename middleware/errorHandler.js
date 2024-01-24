@@ -29,8 +29,10 @@ const errorHandler = (err,req,res,next)=>{
                 title:"Server Error",
                 message:err.message,
                 stackTrace:err.stack
-            })            
+            })  
+            break          
             default: console.log('No error Found')
+            break
 
     }
 
